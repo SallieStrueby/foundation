@@ -6,43 +6,30 @@ MakeIntroduction <- paste("Hello, my name is", my.name, "and I am", my.age, "yea
 MakeIntroduction
 # variable for my.intro
 my.intro <- MakeIntroduction(my.name, my.age)
-my.intro
+print(my.intro)
 # variable for casual intro
 casual.intro <- sub("Hello, my name is","Hey, I'm", my.intro)
 print(casual.intro)
-<<<<<<< HEAD
-# variable for capitol intro
+# variable for capitol.intro
 library(stringr)
 capitol.intro <- str_to_upper(my.intro)
-capitol.intro
+print(capitol.intro)
 # variable for intro.e.count
 intro.e.count <- str_count(my.intro, pattern = 'e')
-intro.e.count
+print(intro.e.count)
 # Part Two Books
 Mybooks <- c("Salem's Lot", "Harry Potter", "Lord of the Rings", "Hunger Games", "Wizard of Earth Sea ", "Neverwhere")
 print(Mybooks)
-# Top three books variable
+# variable for top.three.books
 top.three.books <- Mybooks[1:3]
-top.three.books
-# Book review variable
-=======
-library(stringr)
-capitol.intro <- str_to_upper(my.intro)
-intro.e.count <- str_count(my.intro, pattern = 'e')
-# Part Two Books
-Mybooks <- c("Salem's Lot", "Harry Potter", "Lord of the Rings", "Hunger Games", "Wizard of Earth Sea ", "Neverwhere")
-print(Mybooks)
-top.three.books <- Mybooks[1:3]
->>>>>>> a4f04a9ac95ea3c8c66e905bcbf4e8a1d15572fc
+print(top.three.books)
+# variable for book.reviews
 book.reviews <-"is a great read!"
 paste(Mybooks, book.reviews)
 #variable books without four
 books.without.four <- (Mybooks[-4])
-books.without.four
-<<<<<<< HEAD
-# variable with long titles
-=======
->>>>>>> a4f04a9ac95ea3c8c66e905bcbf4e8a1d15572fc
+print(books.without.four)
+# variable for long.titles
 long.titles <- c("Salem's Lot", "Harry Potter", "Lord of the Rings", "Hunger Games", "Wizard of Earth Sea ", "Neverwhere")
 title.is.long <- str_count(long.titles) >15
 # Part Three Squares
